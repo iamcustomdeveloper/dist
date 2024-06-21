@@ -20,8 +20,8 @@
       property="og:image"
       content="https://iamcustomdeveloper.github.io/dist/assets/team-CukAmZut.png"
     />
-    <script type="module" crossorigin src="/dist/assets/index-Dy0JHA3S.js"></script>
-    <link rel="stylesheet" crossorigin href="/dist/assets/index-Cg5oBLkC.css">
+    <script type="module" crossorigin src="/dist/assets/index-BhQkZAS6.js"></script>
+    <link rel="stylesheet" crossorigin href="/dist/assets/index-DQwqcogH.css">
   </head>
   <body class="relative">
     <header
@@ -647,13 +647,39 @@
             <div
               class="swiper-slide w-[272px] md:w-[400px] h-[242px] md:h-[378px]"
             >
-              <div class="w-full h-full">
-                <img
-                  src="/dist/assets/work-b6ryyBtF.png"
-                  alt="work"
-                  class="w-full h-full object-contain"
-                />
+              <div class="swiper mySwiper4 z-50">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="w-full h-full">
+                      <img
+                        src="/dist/assets/work-b6ryyBtF.png"
+                        alt="work"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w-full h-full">
+                      <img
+                        src="/dist/assets/Electrical-JGDG2tm9.png"
+                        alt="work"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w-full h-full">
+                      <img
+                        src="/dist/assets/work-b6ryyBtF.png"
+                        alt="work"
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
               </div>
+
               <h2 class="font-semibold text-[#030C2B] text-lg mt-2 w-full ml-2">
                 Concrete work
               </h2>
@@ -906,28 +932,6 @@
           <p class="text-black text-[13px]">@2024 Sakrd All rights reserved</p>
         </div>
       </div>
-      <!-- <dialog id="my_modal_3" class="modal">
-        <div class="modal-box">
-          <button
-            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-          >
-            ✕
-          </button>
-          <div class="md:w-10 md:h-10 w-14 h-14 mx-auto">
-            <img src="./assets/success.svg" alt="" />
-          </div>
-          <h2 class="text-[#3052CE] text-5xl font-semibold text-center my-8">
-            Thank You!
-          </h2>
-          <p class="text-[#353D55 text-2xl] text-center">
-            We’ve received your message and will get back to you shortly. Thanks
-            for your interest!
-          </p>
-        </div>
-        <form method="dialog" class="modal-backdrop">
-          <button>close</button>
-        </form>
-      </dialog> -->
       <dialog id="my_modal_3" class="modal">
         <div class="modal-box">
           <form method="dialog">
@@ -950,64 +954,7 @@
         </div>
       </dialog>
     </footer>
-    <script>
-      function toggleDrawer() {
-        document.getElementById("my-drawer").click();
-      }
-    </script>
-    <script>
-      function applyMarginLeft(sourceId, targetId) {
-        document.getElementById(targetId).style.marginLeft =
-          window.getComputedStyle(document.getElementById(sourceId)).marginLeft;
-      }
-      applyMarginLeft("about-us", "marginDisplay");
-      window.addEventListener("resize", function () {
-        applyMarginLeft("about-us", "marginDisplay");
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        function getFragmentQueryParameter(name) {
-          let fragment = window.location.hash.substring(1); // Get everything after the #
-          let params = new URLSearchParams(fragment.split("?")[1]); // Get the query part after ?
-          return params.get(name);
-        }
-
-        function showPopup() {
-          let popup = document.getElementById("my_modal_3");
-          popup.showModal();
-          setTimeout(() => {
-            document.getElementById("my_modal_3").open = false;
-            window.location.href = "/";
-          }, 3000);
-        }
-
-        console.log("window.location.hash:", window.location.hash); // Log the hash part of the URL
-        let params = new URLSearchParams(window.location.hash.split("?")[1]);
-        console.log("params:", params); // Log the URLSearchParams object
-
-        for (let [key, value] of params.entries()) {
-          console.log(`${key}: ${value}`);
-        }
-
-        if (getFragmentQueryParameter("sent") === "success") {
-          showPopup();
-        }
-      });
-    </script>
-    <script>
-      function toggleText() {
-        var moreText = document.getElementById("moreText");
-        var toggleButton = document.getElementById("toggleButton");
-
-        if (moreText.style.display === "none") {
-          moreText.style.display = "inline";
-          toggleButton.textContent = "Read Less";
-        } else {
-          moreText.style.display = "none";
-          toggleButton.textContent = "Read More";
-        }
-      }
-    </script>
+    <script src="./helper.js"></script>
+   
   </body>
 </html>
