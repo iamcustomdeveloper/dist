@@ -20,8 +20,8 @@
       property="og:image"
       content="https://iamcustomdeveloper.github.io/dist/assets/team-CukAmZut.png"
     />
-    <script type="module" crossorigin src="/dist/assets/index-BhQkZAS6.js"></script>
-    <link rel="stylesheet" crossorigin href="/dist/assets/index-DQwqcogH.css">
+    <script type="module" crossorigin src="/dist/assets/index-DeVV7_LT.js"></script>
+    <link rel="stylesheet" crossorigin href="/dist/assets/index-BXf2oA5I.css">
   </head>
   <body class="relative">
     <header
@@ -955,6 +955,22 @@
       </dialog>
     </footer>
     <script src="./helper.js"></script>
-   
+    <script>
+      function toggleText() {
+        var moreText = document.getElementById("moreText");
+        var toggleButton = document.getElementById("toggleButton");
+
+        if (moreText.style.display === "none") {
+          moreText.style.display = "inline";
+          toggleButton.textContent = "Read Less";
+        } else {
+          moreText.style.display = "none";
+          toggleButton.textContent = "Read More";
+        }
+      }
+      function toggleDrawer() {
+        document.getElementById("my-drawer").click();
+      }
+    </script>
   </body>
 </html>
